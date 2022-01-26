@@ -3,13 +3,12 @@ defmodule Sports.Arenas.Arena do
   import Ecto.Changeset
 
   schema "arenas" do
-    field :closes_at, :integer
-    field :opens_at, :integer
-    field :name, :string
-    field :price_per_hour, :integer
-
-    embeds_one :address, Sports.Arenas.Address
-    embeds_one :phone_number, Sports.Arenas.PhoneNumber
+    field :closes_at, :integer, null: false
+    field :opens_at, :integer, null: false
+    field :name, :string, null: false
+    field :price_per_hour, :integer, null: false
+    embeds_many :address, Sports.Arenas.Address
+    embeds_many :phone_number, Sports.Arenas.PhoneNumber
 
     timestamps()
   end

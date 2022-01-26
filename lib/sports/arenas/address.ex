@@ -3,10 +3,10 @@ defmodule Sports.Arenas.Address do
   import Ecto.Changeset
 
   embedded_schema do
-    field :street, :string
-    field :city, :string
-    field :state, :string
-    field :country, :string
+    field :street, :string , null: false
+    field :city, :string , null: false
+    field :state, :string , null: false
+    field :country, :string, null: false
   end
 
   @doc false

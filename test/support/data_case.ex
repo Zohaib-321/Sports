@@ -24,6 +24,7 @@ defmodule Sports.DataCase do
       import Ecto.Changeset
       import Ecto.Query
       import Sports.DataCase
+      import Sports.Factory
     end
   end
 

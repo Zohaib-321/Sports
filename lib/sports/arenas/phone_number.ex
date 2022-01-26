@@ -3,9 +3,9 @@ defmodule Sports.Arenas.PhoneNumber do
   import Ecto.Changeset
 
   embedded_schema do
-    field :country_code, :integer
-    field :area_code, :integer
-    field :number, :integer
+    field :country_code, :integer , null: false
+    field :area_code, :integer , null: false
+    field :number, :integer , null: false
   end
 
   @doc false
